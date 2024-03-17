@@ -1,0 +1,30 @@
+.table {
+    font-family: "Open Sans", sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.table__caption {
+    text-align: center;
+}
+
+.table__row:nth-child(even) {
+    background: rgba(250, 195, 93, 0.63);
+}
+
+.table__row:hover {
+    background-color: rgba(154, 119, 66, 0.479);
+}
+
+.table__cell {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.table__cell--header {
+    background-color: rgba(250, 195, 93, 0.87);
+    color: black;
+}

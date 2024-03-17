@@ -1,0 +1,19 @@
+.button {
+    background-color: hsl(41, 75%, 77%);
+    font-weight: bold;
+    padding: 12px;
+    border: solid;
+    border-radius: 15px;
+    color: #000000;
+    cursor: pointer;
+    margin: auto;
+}
+
+.button:active {
+    background-color: hsl(0, 83%, 61%);
+    color: aliceblue;
+}
+
+.button:hover {
+    background-color: hsl(41, 100%, 66%);
+}

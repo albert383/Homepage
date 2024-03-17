@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 4 BEM</title>
+    <link rel="icon" href="images/icon.png?1">
+    <meta property="og:image" content="images/share.png?1">
+    <script defer src="js/script.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/button.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body">
+    <nav class="navigation">
+        <h1 class="navigation__header"> Auto Ekspert</h1>
+        <ul class="navigation__list">
+            <li><a class="navigation__item" href="#oRankingu">O Rankingu</a></li>
+            <li><a class="navigation__item" href="#zestawienie">Zestawienie</a></li>
+            <li><a class="navigation__item" href="#najlepszyModel">Najlepszy model</a></li>
+        </ul>
+    </nav>
+    <section id="oRankingu" class="section">
+        <h2 class="section__header">Najbardziej niezawodne samochody rankingu 2023</h2>
+        <p class="section__paragraph"> Twórcy rankingu za rok 2023 wzięli pod uwagę samochody z lat produkcji
+            2020-2023. Dane, jakie znalazły się
+            w
+            rankingu powstały na podstawie informacji nt. 330 000 pojazdów, które uzyskano od ich właścicieli.
+            Najbardziej niezawodne według konsumentów, to samochody marek Lexus, Toyota i Mini. Co ciekawe cztery
+            inne
+            japońskie marki wyprzedzają znane europejskie marki premium tj. BMW czy Porsche. Te zajmują odpowiednio
+            9 i
+            8 pozycję rankingu.
+            Popularny w Polsce Volkswagen znalazł się na 27 z 30 pozycji, ale jeszcze gorzej wypada Mercedes-Benz,
+            zajmując niechlubną 29 pozycję rankingu. Samochody marki Nissan oceniono wyżej niż te od Audi. Marka
+            Volvo
+            znalazła się dopiero na 25 pozycji. Jesteśmy ciekawi, jak wypadałby podobny ranking, gdyby przeprowadzić
+            go
+            wśród konsumentów w Polsce w oparciu o ich własne dane oraz testy samochodów.
+            Liderem jest hybrydowy Lexus ES, który uzyskał świetny wynik, otrzymując 88 punktów na 100. Konsumenci
+            są
+            zadowoleni także z hybrydowych modeli UX (78 punktów), NX (83 punkty) oraz RX (83 punkty).
+            Wynik Toyoty nas nie zaskakuje. To marka, która jest numerem jeden wśród klientów w Polsce. Jej salony
+            nie
+            narzekają na brak klientów. Na miano najbardziej niezawodnych modeli tej marki w rankingu Consumer
+            Reports
+            zasłużyły modele:</p>
+        <ul class="section__list">
+            <li class="section__item">Camry Hybrid</li>
+            <li class="section__item">4Runner</li>
+            <li class="section__item">Camry w wersji benzynowej</li>
+            <li class="section__item">RAV4 Plug-in</li>
+            <li class="section__item">Corolla</li>
+            <li class="section__item">SUV Highlander Hybrid</li>
+        </ul>
+    </section>
+    <div class="container">
+        <table id="zestawienie" class="table">
+            <caption class="table__caption">
+                Jak wypadają poszczególne marki według średniej przewidywanej niezawodności
+            </caption>
+            <thead>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="col">Miejsce</th>
+                    <th class="table__cell table__cell--header" scope="col">Marka</th>
+                    <th class="table__cell table__cell--header" scope="col">Przewodywana niezawodność</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">1</th>
+                    <td class="table__cell">Lexus</td>
+                    <td class="table__cell">79 </td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">2</th>
+                    <td class="table__cell">Toyota</td>
+                    <td class="table__cell">76</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">3</th>
+                    <td class="table__cell">Mini</td>
+                    <td class="table__cell">71</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">4</th>
+                    <td class="table__cell">Acura</td>
+                    <td class="table__cell">70</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">5</th>
+                    <td class="table__cell">Honda</td>
+                    <td class="table__cell">70</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">6</th>
+                    <td class="table__cell">Subaru</td>
+                    <td class="table__cell">69</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">7</th>
+                    <td class="table__cell">Mazda</td>
+                    <td class="table__cell">67</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">8</th>
+                    <td class="table__cell">Porsche</td>
+                    <td class="table__cell">66</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">9</th>
+                    <td class="table__cell">BMW</td>
+                    <td class="table__cell">64</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">10</th>
+                    <td class="table__cell">Kia</td>
+                    <td class="table__cell">61</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">11</th>
+                    <td class="table__cell">Hyundai</td>
+                    <td class="table__cell">56</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">12</th>
+                    <td class="table__cell">Buick</td>
+                    <td class="table__cell">55</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">13</th>
+                    <td class="table__cell">Infiniti</td>
+                    <td class="table__cell">53</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">14</th>
+                    <td class="table__cell">Tesla</td>
+                    <td class="table__cell">48</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">15</th>
+                    <td class="table__cell">Ram</td>
+                    <td class="table__cell">46</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">16</th>
+                    <td class="table__cell">Caddilac</td>
+                    <td class="table__cell">45</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">17</th>
+                    <td class="table__cell">Nissan</td>
+                    <td class="table__cell">45</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">18</th>
+                    <td class="table__cell">Genesis</td>
+                    <td class="table__cell">44</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">19</th>
+                    <td class="table__cell">Audi</td>
+                    <td class="table__cell">43</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__cell--header" scope="row">20</th>
+                    <td class="table__cell">Chevrolet</td>
+                    <td class="table__cell">43</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <section class="section">
+        <div class="section__container">
+            <div class="section__inner">
+                <a href="https://ibb.co/qJP4HZk"><img src="https://i.ibb.co/MB3jzXM/lexuses.webp" alt="lexuses300h"
+                        class="section__image"></a>
+                <div class="section__text" id="najlepszyModel">
+                    <h2 class="section__header">Lexus ES 300h</h2>
+                    <p class="section__paragraph">
+                        Wśród luksusowych sedanów kosztujących powyżej 40 tys. dolarów liderem jest hybrydowy
+                        <strong>Lexus ES
+                            300h, który uzyskał wynik 88 pkt. na 100 możliwych.</strong> Wysokie pozycje w swoich
+                        segmentach zajęły
+                        też trzy hybrydowe modele SUV: UX (78 pkt.), NX (83 pkt.) oraz RX (83 pkt.).
+                        Połączenie wolnossącego silnika benzynowego i jednostki elektrycznej
+                        zapewnia osiągi na poziomie mocnych diesli – przyspieszenie od 0 do 100 km/h zajmuje 8,9 s
+                        (prędkość maksymalna ograniczona elektronicznie do 180 km/h). Napęd szybko reaguje na dodanie
+                        gazu, a to sprawka silnika elektrycznego, który często włącza się do pracy. ES 300h imponuje też
+                        niskim zużyciem paliwa – osiągniecie wyniku na poziomie <strong>5,5 l/100 km</strong> nie wymaga
+                        specjalnych
+                        starań. To spalanie na poziomie... auta miejskiego!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section">
+        <p>
+            <button class="button">Włącz <span class="buttonSpan">ciemny</span> motyw</button>
+        </p>
+    </div>
+    <footer class="footer">
+        Wszystkie prawa zastrzeżone.
+    </footer>
+</body>
+
+</html>
