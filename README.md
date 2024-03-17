@@ -6,5 +6,5 @@ New enhancements such as normalize.css from CDN and refactoring the page with BE
 ![screenshot](https://i.ibb.co/4JH3FT7/Homepagess.png)
 
 ## Technologies used in this project:
--BEM
--ES 6+ Features
+- BEM
+- ES 6+ Features
