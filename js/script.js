@@ -1,18 +1,22 @@
-const button = document.querySelector(".button");
-const body = document.querySelector(".body");
-const buttonSpan = document.querySelector(".buttonSpan");
+{
+    const bodyToggle = () => {
+        const body = document.querySelector(".body");
+        body.classList.toggle("body--black");
+    };
 
-const bodyToggle = () => {
-    body.classList.toggle("body--black");
-};
+    const updateButtonSpanText = () => {
+        const body = document.querySelector(".body");
+        const buttonSpan = document.querySelector(".buttonSpan");
+        buttonSpan.innerText = body.classList.contains("body--black") ? "jasny" : "ciemny";
+    };
 
-const updateButtonSpanText = () => {
-    buttonSpan.innerText = body.classList.contains("body--black") ? "jasny" : "ciemny";
-};
+    const init = () => {
+        const button = document.querySelector(".button");
+        button.addEventListener("click", () => {
+            bodyToggle();
+            updateButtonSpanText();
+        });
+    };
 
-const Click = () => {
-    bodyToggle();
-    updateButtonSpanText();
-};
-
-button.addEventListener("click", Click);
+    init();
+}
